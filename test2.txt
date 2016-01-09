@@ -1,0 +1,32 @@
+*heading  
+simply supported beam (units: lb, in, F) 
+*nodal coordinates 
+1,   0.0,   0.0 
+2,   3.0,   0.0 
+3,   6.0,   0.0 
+4,   9.0,   0.0 
+8,   0.0,   3.0 
+7,   3.0,   3.0 
+6,   6.0,   3.0 
+5,   9.0,   3.0 
+*nodal fixity 
+1, known, known, 0.0, 0.0 
+8, known, known, 0.0, 0.0 
+4, free, known, 0.0, 0.0 
+5, free, known, 0.0, 0.0 
+*nodal loads 
+6, 0.0,    0.0, 40.0 
+7, 0.0,    0.0, 40.0 
+1, 0.0,    0.0, 40.0 
+2, 0.0,    0.0, 40.0 
+3, 0.0,    0.0, 40.0 
+4, 0.0,    0.0, 40.0 
+5, 0.0,    0.0, 40.0 
+8, 0.0,    0.0, 40.0 
+*element data 
+1, plane stress, 1, 2, 7, 8, 0.1, 29e6, 0.3, 7.3e-6 
+2, plane stress, 2, 3, 6, 7, 0.1, 29e6, 0.3, 7.3e-6 
+3, plane stress, 3, 4, 5, 6, 0.1, 29e6, 0.3, 7.3e-6
+*element loads 
+2, 3, -100.0 
+*end

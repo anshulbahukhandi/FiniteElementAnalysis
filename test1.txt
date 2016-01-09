@@ -1,0 +1,16 @@
+*heading
+cantilever beam (units: lb, in)
+*nodal coordinates
+1, 0.0, 0.0
+2, 5.0, 0.0
+3, 5.0, 1.0
+4, 0.0, 1.0
+*nodal fixity
+1, known, known, 0.0, 0.0
+4, known, known, 0.0, 0.0
+*nodal loads
+3, 0.0, 100.0, 0.0
+*element data
+1, plane stress, 1, 2, 3, 4, 0.1, 29e6, 0.3, 7.3e-6
+*element loads
+*end
